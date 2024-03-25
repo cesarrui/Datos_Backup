@@ -1,0 +1,5 @@
+usuario: {"sessionId":"84944","visual":30720,"idSite":5,"fromDB":"SAP","tipoUsuario":"L","source":"web","conversationid":"27697b81-138f-400b-8c4d-9c6945d4486b","flowid":null,"isCX":false,"isFlow":false,"channel":"Partner","SocialReason":"bnVsbA=="}
+
+cedula: 1094972045
+
+C:\proyectos\Certificado ingresos y retenciones colombia\fn-conversation-log-lucy\fn-conversation-log-lucy.Models\BD\

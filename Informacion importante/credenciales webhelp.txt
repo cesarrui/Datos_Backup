@@ -1,0 +1,9 @@
+Credenciales para servicios 
+partner-services-sqldb-elastic.database.windows.net
+partner-user
+Passadmin01@$
+
+
+Repositorios
+
+Server=tcp:sql-common-dev-ol.database.windows.net,1433;Initial Catalog=db-partner-roster-dev-sv;Persist Security Info=False;User ID=usrpartnerproviderdev;Password=3C1A796F-D7C9-4D53-A9BB-15B126BC7A5F;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;

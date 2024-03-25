@@ -1,0 +1,16 @@
+SELECT TOP (1000) [certificateincomewithholdingid]
+      ,[ITEM_VR_36]
+      ,[ITEM_V_36_CRYPTED]
+  FROM [dbo].[certificateincomewithholdingsTESTDEV]
+
+OPEN SYMMETRIC KEY IncomeWithholdings_Key_01  
+   DECRYPTION BY CERTIFICATE IncomeWithholdings;
+UPDATE	[dbo].[certificateincomewithholdingsTESTDEV]
+SET		ITEM_V_36_CRYPTED	= EncryptByKey(Key_GUID('IncomeWithholdings_Key_01'), convert(varchar(30), ITEM_VR_36, 1), 1, HASHBYTES('SHA2_256', CONVERT( varbinary, [certificateincomewithholdingid])))		
+GO
+
+UPDATE	[dbo].[certificateincomewithholdingsTESTDEV]
+SET		ITEM_VR_36 = 15 where certificateincomewithholdingid = '5BF4B60D-6435-47FC-8987-0069E7DF218E'
+
+
+
